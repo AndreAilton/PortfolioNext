@@ -13,7 +13,8 @@ import BackToTop from "@/components/back-to-top";
 
 export default function Home() {
   return (
-    <main className="flex flex-col items-center px-4">
+    // ATUALIZADO: Removido o 'px-4' e adicionado 'w-full'
+    <main className="flex flex-col items-center w-full">
       <ScrollProgress />
       <Header />
       <Hero />
