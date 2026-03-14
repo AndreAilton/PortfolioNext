@@ -15,7 +15,7 @@ export const translations = {
     },
     hero: {
       greeting: "Olá, eu sou",
-      role: "Desenvolvedor Fullstack Junior",
+      role: "Desenvolvedor Fullstack",
       description:
         "Sou um desenvolvedor com forte experiência em Front-End (React.js, Next.js, Tailwind, TS/JS) expandindo para Fullstack. Sou apaixonado por criar interfaces incríveis e funcionais.",
       contactBtn: "Entre em contato",
@@ -185,7 +185,7 @@ export const translations = {
     },
     hero: {
       greeting: "Hi, I'm",
-      role: "Junior Fullstack Developer",
+      role: "Fullstack Developer",
       description:
         "I'm a developer with strong Front-End experience (React.js, Next.js, Tailwind, TS/JS) expanding to Fullstack. I'm passionate about creating amazing and functional interfaces.",
       contactBtn: "Contact me",

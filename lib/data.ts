@@ -27,7 +27,7 @@ export const NAV_LINKS = [
 
 export const HERO_DATA = {
   name: "André Ailton",
-  role: "Desenvolvedor Fullstack Junior",
+  role: "Desenvolvedor Fullstack",
   description:
     "Sou um desenvolvedor com forte experiência em Front-End (React.js, Next.js, Tailwind, TS/JS) expandindo para Fullstack. Sou apaixonado por criar interfaces incríveis e funcionais.",
   socials: {

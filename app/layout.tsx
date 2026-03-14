@@ -18,7 +18,7 @@ const jetbrainsMono = JetBrains_Mono({
 
 export const metadata: Metadata = {
   title: "André Ailton | Desenvolvedor Fullstack",
-  description: "Portfólio de André Ailton, Desenvolvedor Fullstack Junior.",
+  description: "Portfólio de André Ailton, Desenvolvedor Fullstack.",
 };
 
 export default function RootLayout({
