@@ -1,23 +1,24 @@
-import type { Metadata } from 'next';
-import { Inter, JetBrains_Mono } from 'next/font/google';
-import { ThemeProvider } from '@/components/theme-provider';
-import { LanguageProvider } from '@/context/language-context';
-import { Toaster } from "react-hot-toast"
-import './globals.css';
+import type { Metadata } from "next";
+import { Inter, JetBrains_Mono } from "next/font/google";
+import { ThemeProvider } from "@/components/theme-provider";
+import { LanguageProvider } from "@/context/language-context";
+import { Toaster } from "react-hot-toast";
+import { Analytics } from "@vercel/analytics/next";
+import "./globals.css";
 
 const inter = Inter({
-  subsets: ['latin'],
-  variable: '--font-sans',
+  subsets: ["latin"],
+  variable: "--font-sans",
 });
 
 const jetbrainsMono = JetBrains_Mono({
-  subsets: ['latin'],
-  variable: '--font-mono',
+  subsets: ["latin"],
+  variable: "--font-mono",
 });
 
 export const metadata: Metadata = {
-  title: 'André Ailton | Desenvolvedor Fullstack',
-  description: 'Portfólio de André Ailton, Desenvolvedor Fullstack Junior.',
+  title: "André Ailton | Desenvolvedor Fullstack",
+  description: "Portfólio de André Ailton, Desenvolvedor Fullstack Junior.",
 };
 
 export default function RootLayout({
@@ -39,6 +40,7 @@ export default function RootLayout({
           >
             {children}
             <Toaster position="top-right" />
+            <Analytics />
           </ThemeProvider>
         </LanguageProvider>
       </body>
