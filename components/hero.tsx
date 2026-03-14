@@ -63,7 +63,7 @@ export default function Hero() {
           <div className="flex items-center gap-5 pt-4 border-t border-gray-200 dark:border-zinc-800/50 mt-4">
             <a
               className="text-gray-500 dark:text-zinc-400 hover:text-gray-900 dark:hover:text-white transition flex items-center gap-2 text-sm group"
-              href="/CV.pdf"
+              href="/Curriculo_Andre.pdf"
               download
             >
               <Download className="w-4 h-4 group-hover:-translate-y-1 transition" /> 

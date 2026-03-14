@@ -8,6 +8,8 @@ import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Send } from "lucide-react";
 import { useTranslation } from "@/lib/i18n";
+import { sendEmail } from "@/actions/sendEmail"; 
+import toast from "react-hot-toast"; // <-- Importação do Toast
 
 export default function Contact() {
   const { t } = useTranslation();
@@ -29,11 +31,30 @@ export default function Contact() {
   });
 
   const onSubmit = async (data: FormData) => {
-    // Simulate API call
-    await new Promise((resolve) => setTimeout(resolve, 2000));
-    console.log("Form Data:", data);
-    alert(t.contact.successMsg);
-    reset();
+    // Exibe um toast de carregamento enquanto aguarda a resposta (opcional, mas fica legal)
+    const toastId = toast.loading("Enviando mensagem...");
+
+    try {
+      const response = await sendEmail(data);
+
+      if (response.error) {
+        // Substitui o loading por um erro
+        toast.error("Ocorreu um erro ao enviar a mensagem. Tente novamente.", {
+          id: toastId,
+        });
+        return;
+      }
+
+      // Substitui o loading por sucesso!
+      toast.success(t.contact.successMsg, {
+        id: toastId,
+      });
+      reset();
+    } catch (error) {
+      toast.error("Erro inesperado. Tente novamente mais tarde.", {
+        id: toastId,
+      });
+    }
   };
 
   return (

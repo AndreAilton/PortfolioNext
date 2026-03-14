@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Inter, JetBrains_Mono } from 'next/font/google';
 import { ThemeProvider } from '@/components/theme-provider';
 import { LanguageProvider } from '@/context/language-context';
+import { Toaster } from "react-hot-toast"
 import './globals.css';
 
 const inter = Inter({
@@ -37,6 +38,7 @@ export default function RootLayout({
             disableTransitionOnChange
           >
             {children}
+            <Toaster position="top-right" />
           </ThemeProvider>
         </LanguageProvider>
       </body>
