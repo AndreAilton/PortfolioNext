@@ -14,8 +14,8 @@ export default function Hero() {
   return (
     <section 
       id="home" 
-      // Fundo e texto adaptativos: claro por padrão, dark: para tema escuro
-      className="w-full min-h-screen flex items-center justify-center  dark:bg-zinc-950 text-gray-900 dark:text-white px-6 scroll-mt-[100rem]"
+      // ATUALIZADO: Usando self-stretch e -mx-4 para anular o px-4 do <main> com perfeição
+      className="self-stretch -mx-4 min-h-screen flex items-center justify-center dark:bg-zinc-950 text-gray-900 dark:text-white px-6 sm:px-10 scroll-mt-[100rem]"
     >
       <div className="max-w-6xl w-full grid md:grid-cols-2 gap-10 items-center pt-28 md:pt-0">
 
@@ -43,7 +43,6 @@ export default function Hero() {
           <div className="flex flex-wrap gap-4 pt-2">
             <Link
               href="#projects"
-              // Botão primário mantido com cores sólidas (branco no claro, azul no escuro)
               className="group flex items-center gap-2 px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg font-medium transition"
             >
               {t.hero.viewProjectsBtn}
@@ -52,14 +51,13 @@ export default function Hero() {
 
             <Link
               href="#contact"
-              // Botão secundário adaptativo (borda cinza claro no tema claro)
               className="px-6 py-3 border border-gray-300 dark:border-zinc-700 hover:border-blue-600 dark:hover:border-blue-500 rounded-lg transition"
             >
               {t.hero.contactBtn}
             </Link>
           </div>
 
-          {/* Redes Sociais e CV (Integrados de forma limpa ao novo design) */}
+          {/* Redes Sociais e CV */}
           <div className="flex items-center gap-5 pt-4 border-t border-gray-200 dark:border-zinc-800/50 mt-4">
             <a
               className="text-gray-500 dark:text-zinc-400 hover:text-gray-900 dark:hover:text-white transition flex items-center gap-2 text-sm group"
@@ -70,7 +68,7 @@ export default function Hero() {
               {t.hero.downloadCv}
             </a>
             
-            <div className="w-1 h-1 rounded-full bg-gray-300 dark:bg-zinc-700"></div> {/* Separador visual */}
+            <div className="w-1 h-1 rounded-full bg-gray-300 dark:bg-zinc-700"></div>
 
             <div className="flex gap-4">
               <a
@@ -103,19 +101,16 @@ export default function Hero() {
           transition={{ duration: 0.5, delay: 0.2 }}
         >
           <div className="relative">
-            {/* Mantivemos o Next/Image para melhor performance e LCP */}
             <Image
-              src="/images/hero-foto.png" // Confirme se o nome do arquivo na pasta public está exatamente assim
+              src="/images/hero-foto.png" 
               alt={`Foto de ${HERO_DATA.name}`}
-              width={384} // Equivalente a w-96
+              width={384} 
               height={500}
               quality={95}
               priority={true}
-              // Adicionei w-72 md:w-96 rounded-2xl object-cover shadow-2xl que faltavam no seu código
-              className="w-72 md:w-96  object-cover  border-gray-200 dark:border-zinc-800/50 relative z-10"
+              className="w-72 md:w-96 object-cover border-gray-200 dark:border-zinc-800/50 relative z-10"
             />
 
-            {/* Glow decorativo - Mais sutil no tema claro e mantido como antes no escuro */}
             <div className="absolute top-10 left-10 w-72 h-72 bg-blue-500/10 dark:bg-blue-500/20 blur-3xl rounded-full z-0 pointer-events-none"></div>
           </div>
         </motion.div>
