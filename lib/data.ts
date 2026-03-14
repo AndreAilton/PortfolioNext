@@ -34,6 +34,7 @@ export const HERO_DATA = {
     github: "https://github.com/AndreAilton",
     linkedin: "https://linkedin.com/in/andreailton/",
   },
+  viewProjectsBtn: "Ver Projetos",
 };
 
 export const ABOUT_DATA = {

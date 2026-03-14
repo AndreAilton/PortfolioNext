@@ -20,6 +20,7 @@ export const translations = {
         "Sou um desenvolvedor com forte experiência em Front-End (React.js, Next.js, Tailwind, TS/JS) expandindo para Fullstack. Sou apaixonado por criar interfaces incríveis e funcionais.",
       contactBtn: "Entre em contato",
       downloadCv: "Baixar CV",
+      viewProjectsBtn: "Ver Projetos",
     },
     about: {
       title: "Sobre mim",
@@ -189,6 +190,7 @@ export const translations = {
         "I'm a developer with strong Front-End experience (React.js, Next.js, Tailwind, TS/JS) expanding to Fullstack. I'm passionate about creating amazing and functional interfaces.",
       contactBtn: "Contact me",
       downloadCv: "Download CV",
+      viewProjectsBtn: "View Projects",
     },
     about: {
       title: "About me",
