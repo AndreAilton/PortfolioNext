@@ -105,7 +105,7 @@ export default function Hero() {
           <div className="relative">
             {/* Mantivemos o Next/Image para melhor performance e LCP */}
             <Image
-              src="/hero-foto.png" // Confirme se o nome do arquivo na pasta public está exatamente assim
+              src="/images/hero-foto.png" // Confirme se o nome do arquivo na pasta public está exatamente assim
               alt={`Foto de ${HERO_DATA.name}`}
               width={384} // Equivalente a w-96
               height={500}
