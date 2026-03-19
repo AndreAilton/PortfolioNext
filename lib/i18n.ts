@@ -89,59 +89,59 @@ export const translations = {
       items: [
         {
           title:
-            "SaaS from Scratch to Professional with Next.js, TypeScript, Database, and Stripe Payments",
+            "SaaS do zero ao profissional com Next JS, TypeScript, Banco de dados, Stripe pagamentos",
           issuer: "Udemy",
           date: "2025",
           description:
-            "Building complete SaaS applications integrating Next.js, TypeScript, databases, and payment gateway with Stripe.",
+            "Construção de aplicações SaaS completas integrando Next.js, TypeScript, bancos de dados e gateway de pagamentos com Stripe.",
           link: "https://www.udemy.com/certificate/UC-f43a4181-21db-44f1-99fb-ec456563cbe2/",
         },
         {
-          title: "SQL Impressionador by Hashtag Treinamentos",
+          title: " Sql Impressionador da Hashtag Treinamentos",
           issuer: "Hashtag Treinamentos",
           date: "2023",
           description:
-            "Mastery of data modeling, advanced queries, and database management using Microsoft SQL Server.",
+            "Domínio em modelagem de dados, consultas avançadas e gerenciamento de banco de dados utilizando Microsoft SQL Server.",
           link: "https://portalhashtag.com/certificado-hashtag/1702634273166x339481875285581950",
         },
         {
-          title: "Python Impressionador by Hashtag Treinamentos",
+          title: "Python Impressionador da Hashtag Treinamento",
           issuer: "Hashtag Treinamentos",
           date: "2023",
           description:
-            "Python development with a focus on task automation, exploratory analysis, and efficient data manipulation.",
+            "Desenvolvimento em Python com foco em automação de tarefas, análise exploratória e manipulação eficiente de dados.",
           link: "https://portalhashtag.com/certificado-hashtag/1700506735685x598630659170238500",
         },
         {
-          title: "Power BI Impressionador by Hashtag Treinamentos",
+          title: "Power Bi Impressionador da Hashtag Treinamentos",
           issuer: "Hashtag Treinamentos",
           date: "2023",
           description:
-            "Creation of interactive dashboards and advanced analytical reports for insight extraction and strategic decision-making.",
+            "Criação de dashboards interativos e relatórios analíticos avançados para extração de insights e tomada de decisão estratégica.",
           link: "https://portalhashtag.com/certificado-hashtag/1697495649813x771563991798906900",
         },
         {
-          title: "JavaScript Developer Training",
+          title: "Formação JavaScript Developer",
           issuer: "DIO",
           date: "2026",
           description:
-            "Mastery of the JavaScript language, covering everything from programming logic to modern web development practices.",
+            "Domínio da linguagem JavaScript, abordando desde lógica de programação até práticas modernas para desenvolvimento web.",
           link: "https://hermes.dio.me/certificates/TDDOLSI0.pdf",
         },
         {
-          title: "BI AND BIG DATA",
+          title: "BI E BIG DATA ",
           issuer: "Descomplica",
           date: "2024",
           description:
-            "Specialization in information architecture, processing, and mining of large data volumes aimed at Business Intelligence.",
+            "Especialização em arquitetura da informação, processamento e mineração de grandes volumes de dados voltados para Business Intelligence.",
           link: "https://certificados.descomplica.com.br/graduacao/712194d679239d0c54d5dd21f3460de3a227a1beae5a7697e74b75b5e26b7449",
         },
         {
-          title: "Systems Analysis and Development",
+          title: "Analise e Desenvolvimento de Sistemas",
           issuer: "Descomplica",
           date: "2025",
           description:
-            "Comprehensive training in the software lifecycle, encompassing requirements gathering, architecture, and systems development.",
+            "Formação abrangente no ciclo de vida de software, englobando levantamento de requisitos, arquitetura e desenvolvimento de sistemas.",
           link: "https://media.licdn.com/dms/image/v2/D5622AQHTCYXaU-v8bQ/feedshare-shrink_800/B56ZiuLFTzG0Ak-/0/1755268799147?e=1775088000&v=beta&t=TShlpFya3obFmUeDY8kcUb6oK371eA0Iy_04So4uV-w",
         },
       ],
